@@ -1,0 +1,14 @@
+Große Zahlen sollen in arrays gespeichert werden 
+die Zahl soll umgedreht sein,
+danach beschriebene Angaben implementieren. 
+
+in arrays speichern:
+
+Array nicht länger, als die Zahl!
+
+in jedem Feld nur Zahlen von 0-9 
+die Zahl wird umgekehrt. 
+
+
+konvertieren Zahl zum String, haben dann einen char Array
+ist es möglich die einzelnen Zahlen in den Strin geinzulesen?
