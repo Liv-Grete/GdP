@@ -14,23 +14,18 @@ public class Oktadoku {
 
 	public Oktadoku(Variante var)  {  /* TODO */  }
 	public void read()             {  
-		int[][] a= new int[8][8];
+		int[]a= new int[64];
 		for (int i=0; i<a.length; i++)
-			for (int j=0; j<a.length; j++)
-				a[i][j]=StdIn.readInt();
+			//for (int j=0; j<a.length; j++)
+				a[i]=StdIn.readInt();
 	}
 	//		public void write()            {  /* TODO */  }		
 	public boolean check()         {  
+		//checkt nur teilweise, ob die Schritte legal sind
 		//Zeile	([i][j(gleichbleibend)]
 
-		//spalte 
-		int numbers[] = {1,2,3,4,5,6,7,8};
-		for(int i=0; i<a.length;i++) {
-			for(int j=0;j<a.length;i++) {
-				if (numbers[i]==a[i][j]) {
-				}return true;
-			}
-		}
+		//Reihe: i+1 
+		for (int i=0;i<9;i++)
 		//diagonale int [i][i]
 	}
 	public void solve() 	       { 
@@ -54,5 +49,7 @@ public class Oktadoku {
 		//			System.out.println("nicht ok");
 	}
 }
-// check the contents of fields with the factorial 
+//factorial for 8 for one part of the oktadoku  
+//basecase: alles aufgefüllt und gecheckt 
+//möglich: alles als ein dimensionaler Array darstellen und in größeren Abständen springen 
 
